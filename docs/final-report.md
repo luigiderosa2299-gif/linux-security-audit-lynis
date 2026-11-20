@@ -1,15 +1,15 @@
-# Lynis — Report Finale (dopo i fix)
+# Lynis — Final Report (after fixes)
 
-Data: 24 ottobre 2026
-Sistema: Kali GNU/Linux Rolling 2026.3 (VM, UTM)
+Date: 24 October 2026
+System: Kali GNU/Linux Rolling 2026.3 (VM, UTM)
 
-## Fix applicati prima di questa scansione
+## Fixes Applied Before This Scan
 
 1. `sudo apt install -y fail2ban && sudo systemctl enable --now fail2ban`
 2. `sudo apt install -y libpam-passwdqc`
 3. `/etc/login.defs`: `PASS_MAX_DAYS 90`, `PASS_MIN_DAYS 1`
 
-## Riepilogo
+## Summary
 
 ```
 Hardening index : 68 [#############       ]
@@ -22,16 +22,16 @@ Software components:
 - Malware scanner        [X]
 ```
 
-## Confronto diretto
+## Direct Comparison
 
-| | Baseline | Finale |
+| | Baseline | Final |
 |---|---|---|
 | Hardening Index | 65 | **68** |
-| Test eseguiti | 277 | 278 |
-| Suggerimenti aperti | 47 | **43** |
+| Tests performed | 277 | 278 |
+| Open suggestions | 47 | **43** |
 | Intrusion software | ❌ | ✅ |
 
-## fail2ban — conferma servizio attivo
+## fail2ban — Active Service Confirmation
 
 ```
 ● fail2ban.service - Fail2Ban Service

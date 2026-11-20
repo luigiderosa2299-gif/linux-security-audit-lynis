@@ -1,9 +1,9 @@
-# Lynis — Report Baseline (prima dei fix)
+# Lynis — Baseline Report (before fixes)
 
-Data: 24 ottobre 2026
-Sistema: Kali GNU/Linux Rolling 2026.3 (VM, UTM)
+Date: 24 October 2026
+System: Kali GNU/Linux Rolling 2026.3 (VM, UTM)
 
-## Riepilogo
+## Summary
 
 ```
 Hardening index : 65 [#############       ]
@@ -16,7 +16,7 @@ Software components:
 - Malware scanner        [X]
 ```
 
-## Suggerimenti completi (47 totali)
+## Full Suggestions (47 total)
 
 ```
 suggestion[]=DEB-0280|Install libpam-tmpdir to set $TMP and $TMPDIR for PAM sessions|-|-|
@@ -42,4 +42,4 @@ suggestion[]=PKGS-7346|Purge old/removed packages (8 found) with aptitude purge 
 suggestion[]=PKGS-7370|Install debsums utility for the verification of packages with known good database.|-|-|
 ```
 
-*(elenco troncato alle prime 20 righe più rilevanti; il report completo risiede in `/var/log/lynis-report.dat` sulla VM)*
+*(list truncated to the 20 most relevant lines; the full report is in `/var/log/lynis-report.dat` on the VM)*
